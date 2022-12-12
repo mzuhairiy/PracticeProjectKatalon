@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+System.setProperty("webdriver.firefox.bin", "D:/Programs/Mozilla Firefox/firefox.exe");
+
 WebUI.openBrowser('https://the-internet.herokuapp.com/login')
 
 WebUI.setText(findTestObject('Login Page/input Username'), 'tomsmith')
